@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="188dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="MyApplication"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <EditText
+        android:id="@+id/cedula_txt"
+        android:layout_width="244dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="42dp"
+        android:drawableStart="@drawable/file_rename"
+        android:drawablePadding="9dp"
+        android:hint="Cedula"
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <EditText
+        android:id="@+id/nombre_txt"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="105dp"
+        android:drawableStart="@drawable/file_rename"
+        android:drawablePadding="9dp"
+        android:hint="Nombres"
+        android:inputType="textCapCharacters"
+        android:maxLength="100"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <EditText
+        android:id="@+id/fecha_txt"
+        android:layout_width="249dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="288dp"
+        android:clickable="true"
+        android:drawableStart="@drawable/baseline_calendar"
+        android:drawablePadding="9dp"
+        android:focusable="false"
+        android:hint="dia/mes/año"
+        android:inputType="date"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <TextView
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="228dp"
+        android:drawableStart="@drawable/baseline_people"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <EditText
+        android:id="@+id/ciudad_txt"
+        android:layout_width="248dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="166dp"
+        android:drawableStart="@drawable/baseline_location"
+        android:drawablePadding="9dp"
+        android:hint="Ciudad"
+        android:inputType="textCapCharacters"
+        android:maxLength="200"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <Spinner
+        android:id="@+id/spinner_genero"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="129dp"
+        android:entries="@array/genero"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <TextView
+        android:id="@+id/genero_label"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="221dp"
+        android:text="Respuesta"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <EditText
+        android:id="@+id/telefono_txt"
+        android:layout_width="251dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="346dp"
+        android:drawableStart="@drawable/baseline_phone"
+        android:drawablePadding="9dp"
+        android:hint="Telefono"
+        android:inputType="phone"
+        android:maxLength="13" />
+
+    <EditText
+        android:id="@+id/correo_txt"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="291dp"
+        android:drawableStart="@drawable/baseline_alternate_email"
+        android:drawablePadding="9dp"
+        android:hint="Correo"
+        android:inputType="text|textEmailSubject" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="111dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="496dp"
+        android:text="Enviar"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintVertical_bias="0.789" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="491dp"
+        android:onClick="btnCancelar"
+        android:text="Cancelar"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintVertical_bias="0.788" />
+
+</RelativeLayout>
